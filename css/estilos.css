@@ -147,7 +147,36 @@ font-family:audiowide;
 
 .contenedor{
     display: grid;
+    grid-gap: 1em;
     grid-template-columns: 16% 16% 16% 16%;
-    gap: 1em;
-    align-items: stretch;
+    grid-template-rows: 300px 300px;
+    
 }
+
+.animacion{
+
+
+     width: 400px;
+        height: 90px;
+        background: rgb(255, 0, 255);
+        position: relative;
+        animation: mymove 5s infinite;
+    }
+      
+      @keyframes mymove {
+        from {left: 0px;}
+        to {left: 200px;}
+      }
+      
+
+      .transicion{
+        width: 150px;
+        height: 100px;
+        background: rgb(255, 0, 255);
+        transition: width 2s;
+    }
+      
+      .transicion:hover {
+        width: 300px;
+      }
+      
